@@ -1,13 +1,13 @@
-package ru.iprody.orderservice.integration.payment.messaging;
+package com.example.orderservice.integration.payment.messaging;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
-import ru.iprody.orderservice.application.payment.CreateOrderPaymentCommand;
-import ru.iprody.orderservice.domain.model.Order;
-import ru.iprody.orderservice.integration.payment.messaging.config.PaymentRabbitMqProperties;
-import ru.iprody.orderservice.integration.payment.messaging.dto.PaymentRequestMessage;
+import com.example.orderservice.application.payment.CreateOrderPaymentCommand;
+import com.example.orderservice.domain.model.Order;
+import com.example.orderservice.integration.payment.messaging.config.PaymentRabbitMqProperties;
+import com.example.orderservice.integration.payment.messaging.dto.PaymentRequestMessage;
 
 @Slf4j
 @Component

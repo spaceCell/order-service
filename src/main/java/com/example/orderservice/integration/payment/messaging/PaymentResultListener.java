@@ -1,9 +1,9 @@
-package ru.iprody.orderservice.integration.payment.messaging;
+package com.example.orderservice.integration.payment.messaging;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
-import ru.iprody.orderservice.integration.payment.messaging.dto.PaymentResultMessage;
+import com.example.orderservice.integration.payment.messaging.dto.PaymentResultMessage;
 
 @Slf4j
 @Component

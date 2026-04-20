@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.application.dto;
+package com.example.orderservice.application.dto;
 
 public record ShippingAddressDetails(
         String street,

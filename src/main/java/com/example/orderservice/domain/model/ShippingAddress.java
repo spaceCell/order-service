@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.domain.model;
+package com.example.orderservice.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

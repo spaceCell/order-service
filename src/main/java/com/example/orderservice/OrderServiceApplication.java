@@ -1,4 +1,4 @@
-package ru.iprody.orderservice;
+package com.example.orderservice;
 
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.web.dto;
+package com.example.orderservice.web.dto;
 
 import java.math.BigDecimal;
 

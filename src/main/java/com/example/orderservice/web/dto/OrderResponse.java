@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.web.dto;
+package com.example.orderservice.web.dto;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import ru.iprody.orderservice.domain.model.OrderStatus;
+import com.example.orderservice.domain.model.OrderStatus;
 
 @Data
 @AllArgsConstructor

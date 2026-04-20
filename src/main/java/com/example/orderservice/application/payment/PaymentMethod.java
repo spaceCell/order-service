@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.application.payment;
+package com.example.orderservice.application.payment;
 
 public enum PaymentMethod {
     CARD,

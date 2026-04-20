@@ -1,9 +1,9 @@
-package ru.iprody.orderservice.application.dto;
+package com.example.orderservice.application.dto;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-import ru.iprody.orderservice.domain.model.OrderStatus;
+import com.example.orderservice.domain.model.OrderStatus;
 
 public record OrderDetails(
         Long id,

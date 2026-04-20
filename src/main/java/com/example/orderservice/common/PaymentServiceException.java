@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.common;
+package com.example.orderservice.common;
 
 public class PaymentServiceException extends RuntimeException {
 

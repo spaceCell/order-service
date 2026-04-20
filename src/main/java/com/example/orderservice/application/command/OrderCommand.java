@@ -1,10 +1,10 @@
-package ru.iprody.orderservice.application.command;
+package com.example.orderservice.application.command;
 
 import java.util.List;
 
-import ru.iprody.orderservice.application.dto.OrderItemDetails;
-import ru.iprody.orderservice.application.dto.ShippingAddressDetails;
-import ru.iprody.orderservice.domain.model.OrderStatus;
+import com.example.orderservice.application.dto.OrderItemDetails;
+import com.example.orderservice.application.dto.ShippingAddressDetails;
+import com.example.orderservice.domain.model.OrderStatus;
 
 public record OrderCommand(
         Long customerId,

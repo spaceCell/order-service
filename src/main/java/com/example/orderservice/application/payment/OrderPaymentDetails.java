@@ -1,8 +1,8 @@
-package ru.iprody.orderservice.application.payment;
+package com.example.orderservice.application.payment;
 
 import java.time.LocalDateTime;
 
-import ru.iprody.orderservice.application.dto.MoneyDetails;
+import com.example.orderservice.application.dto.MoneyDetails;
 
 public record OrderPaymentDetails(
         Long id,

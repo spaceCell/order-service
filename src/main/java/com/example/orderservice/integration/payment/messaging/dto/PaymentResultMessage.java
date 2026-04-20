@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.integration.payment.messaging.dto;
+package com.example.orderservice.integration.payment.messaging.dto;
 
 public record PaymentResultMessage(
         Long orderId,

@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.integration.payment.dto;
+package com.example.orderservice.integration.payment.dto;
 
 import java.math.BigDecimal;
 

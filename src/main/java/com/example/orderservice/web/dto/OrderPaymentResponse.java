@@ -1,12 +1,12 @@
-package ru.iprody.orderservice.web.dto;
+package com.example.orderservice.web.dto;
 
 import java.time.LocalDateTime;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import ru.iprody.orderservice.application.payment.PaymentMethod;
-import ru.iprody.orderservice.application.payment.PaymentStatus;
+import com.example.orderservice.application.payment.PaymentMethod;
+import com.example.orderservice.application.payment.PaymentStatus;
 
 @Data
 @AllArgsConstructor

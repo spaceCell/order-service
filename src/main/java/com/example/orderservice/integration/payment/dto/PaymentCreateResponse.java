@@ -1,9 +1,9 @@
-package ru.iprody.orderservice.integration.payment.dto;
+package com.example.orderservice.integration.payment.dto;
 
 import java.time.LocalDateTime;
 
-import ru.iprody.orderservice.application.payment.PaymentMethod;
-import ru.iprody.orderservice.application.payment.PaymentStatus;
+import com.example.orderservice.application.payment.PaymentMethod;
+import com.example.orderservice.application.payment.PaymentStatus;
 
 public record PaymentCreateResponse(
         Long id,

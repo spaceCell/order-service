@@ -1,26 +1,26 @@
-package ru.iprody.orderservice.web.mapper;
+package com.example.orderservice.web.mapper;
 
 import java.util.Collections;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
-import ru.iprody.orderservice.application.command.OrderCommand;
-import ru.iprody.orderservice.application.dto.MoneyDetails;
-import ru.iprody.orderservice.application.dto.OrderDetails;
-import ru.iprody.orderservice.application.dto.OrderItemDetails;
-import ru.iprody.orderservice.application.dto.ShippingAddressDetails;
-import ru.iprody.orderservice.application.payment.CreateOrderPaymentCommand;
-import ru.iprody.orderservice.application.payment.OrderPaymentDetails;
-import ru.iprody.orderservice.web.dto.MoneyRequest;
-import ru.iprody.orderservice.web.dto.MoneyResponse;
-import ru.iprody.orderservice.web.dto.OrderPaymentRequest;
-import ru.iprody.orderservice.web.dto.OrderPaymentResponse;
-import ru.iprody.orderservice.web.dto.OrderItemRequest;
-import ru.iprody.orderservice.web.dto.OrderItemResponse;
-import ru.iprody.orderservice.web.dto.OrderRequest;
-import ru.iprody.orderservice.web.dto.OrderResponse;
-import ru.iprody.orderservice.web.dto.ShippingAddressRequest;
-import ru.iprody.orderservice.web.dto.ShippingAddressResponse;
+import com.example.orderservice.application.command.OrderCommand;
+import com.example.orderservice.application.dto.MoneyDetails;
+import com.example.orderservice.application.dto.OrderDetails;
+import com.example.orderservice.application.dto.OrderItemDetails;
+import com.example.orderservice.application.dto.ShippingAddressDetails;
+import com.example.orderservice.application.payment.CreateOrderPaymentCommand;
+import com.example.orderservice.application.payment.OrderPaymentDetails;
+import com.example.orderservice.web.dto.MoneyRequest;
+import com.example.orderservice.web.dto.MoneyResponse;
+import com.example.orderservice.web.dto.OrderPaymentRequest;
+import com.example.orderservice.web.dto.OrderPaymentResponse;
+import com.example.orderservice.web.dto.OrderItemRequest;
+import com.example.orderservice.web.dto.OrderItemResponse;
+import com.example.orderservice.web.dto.OrderRequest;
+import com.example.orderservice.web.dto.OrderResponse;
+import com.example.orderservice.web.dto.ShippingAddressRequest;
+import com.example.orderservice.web.dto.ShippingAddressResponse;
 
 @Component
 public class OrderWebMapper {

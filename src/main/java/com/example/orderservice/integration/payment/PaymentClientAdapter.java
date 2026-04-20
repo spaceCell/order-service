@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.integration.payment;
+package com.example.orderservice.integration.payment;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.FeignException;
@@ -11,8 +11,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Component;
-import ru.iprody.orderservice.integration.payment.dto.PaymentCreateRequest;
-import ru.iprody.orderservice.integration.payment.dto.PaymentCreateResponse;
+import com.example.orderservice.integration.payment.dto.PaymentCreateRequest;
+import com.example.orderservice.integration.payment.dto.PaymentCreateResponse;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

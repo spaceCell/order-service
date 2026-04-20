@@ -1,14 +1,14 @@
-package ru.iprody.orderservice.integration.payment;
+package com.example.orderservice.integration.payment;
 
 import org.springframework.stereotype.Component;
-import ru.iprody.orderservice.application.dto.MoneyDetails;
-import ru.iprody.orderservice.application.payment.CreateOrderPaymentCommand;
-import ru.iprody.orderservice.application.payment.OrderPaymentDetails;
-import ru.iprody.orderservice.application.payment.PaymentStatus;
-import ru.iprody.orderservice.domain.model.Order;
-import ru.iprody.orderservice.integration.payment.dto.PaymentAmountRequest;
-import ru.iprody.orderservice.integration.payment.dto.PaymentCreateRequest;
-import ru.iprody.orderservice.integration.payment.dto.PaymentCreateResponse;
+import com.example.orderservice.application.dto.MoneyDetails;
+import com.example.orderservice.application.payment.CreateOrderPaymentCommand;
+import com.example.orderservice.application.payment.OrderPaymentDetails;
+import com.example.orderservice.application.payment.PaymentStatus;
+import com.example.orderservice.domain.model.Order;
+import com.example.orderservice.integration.payment.dto.PaymentAmountRequest;
+import com.example.orderservice.integration.payment.dto.PaymentCreateRequest;
+import com.example.orderservice.integration.payment.dto.PaymentCreateResponse;
 
 @Component
 public class PaymentServiceMapper {

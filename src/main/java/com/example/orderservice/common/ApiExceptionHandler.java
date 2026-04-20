@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.common;
+package com.example.orderservice.common;
 
 import io.github.resilience4j.bulkhead.BulkheadFullException;
 import io.github.resilience4j.circuitbreaker.CallNotPermittedException;

@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.integration.payment.messaging.config;
+package com.example.orderservice.integration.payment.messaging.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -13,8 +13,8 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.iprody.orderservice.integration.payment.messaging.dto.PaymentRequestMessage;
-import ru.iprody.orderservice.integration.payment.messaging.dto.PaymentResultMessage;
+import com.example.orderservice.integration.payment.messaging.dto.PaymentRequestMessage;
+import com.example.orderservice.integration.payment.messaging.dto.PaymentResultMessage;
 
 import java.util.Map;
 

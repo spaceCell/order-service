@@ -1,4 +1,4 @@
-package ru.iprody.orderservice.application;
+package com.example.orderservice.application;
 
 import java.util.Collections;
 import java.util.List;
@@ -9,23 +9,23 @@ import io.github.resilience4j.ratelimiter.RequestNotPermitted;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.iprody.orderservice.application.command.OrderCommand;
-import ru.iprody.orderservice.application.dto.MoneyDetails;
-import ru.iprody.orderservice.application.dto.OrderDetails;
-import ru.iprody.orderservice.application.dto.OrderItemDetails;
-import ru.iprody.orderservice.application.dto.ShippingAddressDetails;
-import ru.iprody.orderservice.application.payment.CreateOrderPaymentCommand;
-import ru.iprody.orderservice.application.payment.OrderPaymentDetails;
-import ru.iprody.orderservice.common.ResourceNotFoundException;
-import ru.iprody.orderservice.common.PaymentServiceException;
-import ru.iprody.orderservice.domain.model.Money;
-import ru.iprody.orderservice.domain.model.Order;
-import ru.iprody.orderservice.domain.model.OrderItem;
-import ru.iprody.orderservice.domain.model.ShippingAddress;
-import ru.iprody.orderservice.domain.repository.OrderRepository;
-import ru.iprody.orderservice.integration.payment.PaymentClientAdapter;
-import ru.iprody.orderservice.integration.payment.PaymentServiceMapper;
-import ru.iprody.orderservice.integration.payment.messaging.PaymentRequestPublisher;
+import com.example.orderservice.application.command.OrderCommand;
+import com.example.orderservice.application.dto.MoneyDetails;
+import com.example.orderservice.application.dto.OrderDetails;
+import com.example.orderservice.application.dto.OrderItemDetails;
+import com.example.orderservice.application.dto.ShippingAddressDetails;
+import com.example.orderservice.application.payment.CreateOrderPaymentCommand;
+import com.example.orderservice.application.payment.OrderPaymentDetails;
+import com.example.orderservice.common.ResourceNotFoundException;
+import com.example.orderservice.common.PaymentServiceException;
+import com.example.orderservice.domain.model.Money;
+import com.example.orderservice.domain.model.Order;
+import com.example.orderservice.domain.model.OrderItem;
+import com.example.orderservice.domain.model.ShippingAddress;
+import com.example.orderservice.domain.repository.OrderRepository;
+import com.example.orderservice.integration.payment.PaymentClientAdapter;
+import com.example.orderservice.integration.payment.PaymentServiceMapper;
+import com.example.orderservice.integration.payment.messaging.PaymentRequestPublisher;
 
 @Service
 @RequiredArgsConstructor
