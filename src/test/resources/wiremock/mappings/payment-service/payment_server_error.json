@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/payments",
+    "headers": {
+      "X-Idempotency-Key": { "equalTo": "500" }
+    }
+  },
+  "response": {
+    "status": 500,
+    "headers": { "Content-Type": "application/json" },
+    "body": "{\"error\": \"Internal Server Error\"}"
+  }
+}

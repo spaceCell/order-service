@@ -1,0 +1,3 @@
+clients:
+  payment-service:
+    url: http://localhost:9999
