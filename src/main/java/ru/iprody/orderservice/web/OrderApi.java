@@ -1,4 +1,4 @@
-package com.example.orderservice.web;
+package ru.iprody.orderservice.web;
 
 import java.util.List;
 
@@ -10,10 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import com.example.orderservice.web.dto.OrderPaymentRequest;
-import com.example.orderservice.web.dto.OrderPaymentResponse;
-import com.example.orderservice.web.dto.OrderRequest;
-import com.example.orderservice.web.dto.OrderResponse;
+import ru.iprody.orderservice.web.dto.OrderPaymentRequest;
+import ru.iprody.orderservice.web.dto.OrderPaymentResponse;
+import ru.iprody.orderservice.web.dto.OrderRequest;
+import ru.iprody.orderservice.web.dto.OrderResponse;
 
 @Tag(name = "Orders", description = "Операции с заказами и запуск оплаты заказа")
 public interface OrderApi {

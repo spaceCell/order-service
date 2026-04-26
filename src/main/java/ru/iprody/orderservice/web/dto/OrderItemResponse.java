@@ -1,4 +1,4 @@
-package com.example.orderservice.web.dto;
+package ru.iprody.orderservice.web.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;

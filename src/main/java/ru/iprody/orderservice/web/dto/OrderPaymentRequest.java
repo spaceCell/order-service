@@ -1,9 +1,9 @@
-package com.example.orderservice.web.dto;
+package ru.iprody.orderservice.web.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.example.orderservice.application.payment.PaymentMethod;
+import ru.iprody.orderservice.application.payment.PaymentMethod;
 
 @Data
 @NoArgsConstructor

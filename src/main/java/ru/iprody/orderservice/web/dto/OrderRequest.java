@@ -1,4 +1,4 @@
-package com.example.orderservice.web.dto;
+package ru.iprody.orderservice.web.dto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.example.orderservice.domain.model.OrderStatus;
+import ru.iprody.orderservice.domain.model.OrderStatus;
 
 @Data
 @NoArgsConstructor
