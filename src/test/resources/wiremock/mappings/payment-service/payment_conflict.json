@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/payments",
+    "headers": {
+      "X-Idempotency-Key": { "equalTo": "409" }
+    }
+  },
+  "response": {
+    "status": 409,
+    "headers": { "Content-Type": "application/json" },
+    "bodyFileName": "payment-service/payment_conflict_response.json"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/payments",
+    "headers": {
+      "X-Idempotency-Key": { "equalTo": "1" }
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": { "Content-Type": "application/json" },
+    "bodyFileName": "payment-service/payment_success_response.json"
+  }
+}
