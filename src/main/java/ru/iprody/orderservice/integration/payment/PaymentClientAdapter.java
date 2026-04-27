@@ -41,14 +41,19 @@ public class PaymentClientAdapter {
     }
 
     private PaymentCreateResponse processException(FeignException ex) {
-        HttpStatusCode statusCode = HttpStatusCode.valueOf(ex.status());
+        int status = ex.status();
+        if (status < 100 || status > 599) {
+            log.warn("Payment service call has no valid HTTP status ({}): {}", status, ex.getMessage());
+            throw new RuntimeException("Payment service request failed: " + ex.getMessage(), ex);
+        }
+
+        HttpStatusCode statusCode = HttpStatusCode.valueOf(status);
         Optional<ByteBuffer> bodyOptional = ex.responseBody();
 
         if (isAcceptable(statusCode) && bodyOptional.isPresent()) {
             return getResponse(bodyOptional.get());
-        } else {
-            throw new RuntimeException("Payment service request failed: " + ex.getMessage(), ex);
         }
+        throw new RuntimeException("Payment service request failed: " + ex.getMessage(), ex);
     }
 
     private boolean isAcceptable(HttpStatusCode statusCode) {

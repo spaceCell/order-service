@@ -6,8 +6,14 @@ services:
       - "5673:5672"
       - "15673:15672"
     environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
     networks:
       - default
       - shared-services
@@ -18,13 +24,16 @@ services:
       dockerfile: Dockerfile
     container_name: order-service
     depends_on:
-      - rabbitmq
+      rabbitmq:
+        condition: service_healthy
     environment:
+      TZ: Asia/Almaty
+      SPRING_PROFILES_ACTIVE: docker
       RABBITMQ_HOST: rabbitmq
       RABBITMQ_PORT: 5672
-      RABBITMQ_USERNAME: guest
-      RABBITMQ_PASSWORD: guest
-      CLIENTS_PAYMENT_SERVICE_URL: http://host.docker.internal:8082
+      RABBITMQ_USERNAME: admin
+      RABBITMQ_PASSWORD: admin
+      CLIENTS_PAYMENT_SERVICE_URL: http://payment-service:8082
     ports:
       - "8081:8081"
     networks:
